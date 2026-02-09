@@ -26,11 +26,11 @@ export default async function decorate(block) {
     const logoLink = logoWrapper.querySelector('a') || document.createElement('a');
     if (!logoLink.href) logoLink.href = '/';
     logoLink.classList.add('logo');
-    
+
     // Wrap content if it isn't linked already
     if (!logoLink.parentElement.isEqualNode(logoWrapper)) {
-        logoWrapper.innerHTML = '';
-        logoWrapper.appendChild(logoLink);
+      logoWrapper.innerHTML = '';
+      logoWrapper.appendChild(logoLink);
     }
   }
 

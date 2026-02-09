@@ -20,6 +20,7 @@
 .header .logo img {
   height: 40px; /* Adjust as needed */
   margin-right: 10px;
+
   /* Add a filter for the glowing blue effect if needed, e.g., filter: drop-shadow(0 0 5px #00ffff); */
 }
 
@@ -29,7 +30,7 @@
 }
 
 .header nav a {
-  color: #00ffff; /* Blue color for links as in the image */
+  color: #0ff; /* Blue color for links as in the image */
   text-decoration: none;
   padding: 5px 10px;
   transition: color 0.3s;
@@ -42,7 +43,7 @@
 }
 
 /* Optional: Basic responsiveness for mobile view */
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .header {
     flex-direction: column;
     align-items: flex-start;
